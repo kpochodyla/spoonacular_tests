@@ -1,0 +1,46 @@
+{
+  "test_recipes_analyze": {
+    
+  },
+
+  "test_recipes_autcomplete": {
+
+  },
+
+  "test_recipes_by_id": {
+
+  },
+
+  "test_recipes_extrac": {
+
+  },
+
+  "test_recipes_get_instrucions": {
+
+  },
+
+  "test_recipes_information": {
+
+  },
+
+  "test_recipes_random": {
+    "baseUrl": "https://api.spoonacular.com/recipes/random?",
+    "parameters": {
+      "limitLicense": "true",
+      "tags": "vegetarian",
+      "number": "1"
+    }
+  },
+
+  "test_recipes_search": {
+
+  },
+
+  "test_recipes_similar": {
+
+  },
+
+  "test_recipes_summarize": {
+
+  }
+}
