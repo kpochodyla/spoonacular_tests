@@ -15,12 +15,25 @@
 
   },
 
-  "test_recipes_get_instrucions": {
-
+  "test_recipes_get_instructions": {
+    "baseUrl": "https://api.spoonacular.com/recipes/{id}/analyzedInstructions",
+    "parameters": {
+      "id": 645416
+    }
   },
 
   "test_recipes_information": {
+    "baseUrl": "https://api.spoonacular.com/recipes/{id}/information",
+    "parameters": {
+      "id": 645416
+    }
+  },
 
+  "test_recipes_information_bad_request": {
+    "baseUrl": "https://api.spoonacular.com/recipes/{id}/information",
+    "parameters": {
+      "id": 0
+    }
   },
 
   "test_recipes_random": {
