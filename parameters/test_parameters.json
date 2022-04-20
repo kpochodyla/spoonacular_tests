@@ -1,18 +1,55 @@
 {
-  "test_recipes_analyze": {
-    
+
+  "test_recipes_autocomplete": {
+    "baseUrl": "https://api.spoonacular.com/recipes/autocomplete",
+    "parameters": {
+      "query": "wrap",
+      "number": "10"
+    }
   },
 
-  "test_recipes_autcomplete": {
-
+  "test_recipes_taste_by_id": {
+    "baseUrl": "https://api.spoonacular.com/recipes/{id}/tasteWidget.json",
+    "parameters": {
+      "id": 645416
+    }
   },
 
-  "test_recipes_by_id": {
-
+  "test_recipes_equipment_by_id": {
+    "baseUrl": "https://api.spoonacular.com/recipes/{id}/equipmentWidget.json",
+    "parameters": {
+      "id": 645416
+    }
   },
 
-  "test_recipes_extrac": {
+  "test_recipes_price_breakdown_by_id": {
+    "baseUrl": "https://api.spoonacular.com/recipes/{id}/priceBreakdownWidget.json",
+    "parameters": {
+      "id": 645416
+    }
+  },
 
+  "test_recipes_ingredients_by_id": {
+    "baseUrl": "https://api.spoonacular.com/recipes/{id}/ingredientWidget.json",
+    "parameters": {
+      "id": 645416
+    }
+  },
+
+  "test_recipes_nutrition_by_id": {
+    "baseUrl": "https://api.spoonacular.com/recipes/{id}/nutritionWidget.json",
+    "parameters": {
+      "id": 645416
+    }
+  },
+
+  "test_recipes_extract": {
+    "baseUrl": "https://api.spoonacular.com/recipes/extract",
+    "parameters": {
+      "url": "https://www.foodista.com/recipe/XPFCTLVN/ugly-cake",
+      "includeTaste": "true",
+      "analyze": "true"
+    }
   },
 
   "test_recipes_get_instructions": {
@@ -37,7 +74,7 @@
   },
 
   "test_recipes_random": {
-    "baseUrl": "https://api.spoonacular.com/recipes/random?",
+    "baseUrl": "https://api.spoonacular.com/recipes/random",
     "parameters": {
       "limitLicense": "true",
       "tags": "vegetarian",
@@ -46,14 +83,38 @@
   },
 
   "test_recipes_search": {
+    "baseUrl": "https://api.spoonacular.com/recipes/complexSearch",
+    "parameters": {
+      "query": "pasta",
+      "diet": "vegetarian",
+      "maxCarbs": "100"
+    }
+  },
 
+  "test_recipes_search_by_nutrients": {
+    "baseUrl": "https://api.spoonacular.com/recipes/findByNutrients",
+    "parameters": {
+      "minCarbs": "10",
+      "maxCarbs": "50",
+      "maxSugar": "10",
+      "number": "5"
+    }
+  },
+
+  "test_recipes_search_by_ingredients": {
+    "baseUrl": "https://api.spoonacular.com/recipes/findByIngredients",
+    "parameters": {
+      "ingredients": "apples,flour,sugar",
+      "number": "10",
+      "ignorePantry": "true"
+    }
   },
 
   "test_recipes_similar": {
-
-  },
-
-  "test_recipes_summarize": {
-
+    "baseUrl": "https://api.spoonacular.com/recipes/{id}/similar",
+    "parameters": {
+      "id": 645416,
+      "number": "4"
+    }
   }
 }

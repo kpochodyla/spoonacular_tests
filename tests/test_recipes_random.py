@@ -1,4 +1,4 @@
-from common import SpoonacularTests
+from utils import SpoonacularTests
 
 
 class TestRecipesRandom(SpoonacularTests):
@@ -6,9 +6,9 @@ class TestRecipesRandom(SpoonacularTests):
     def test_recipes_random(self):
 
         base_url, request_parameters = self.get_request_data("test_recipes_random")
-        random_recipe_request_url = self.append_request_params(base_url, request_parameters)
+        random_recipe_request_url = self.get_request_url(base_url, request_parameters)
 
-        random_recipe_reply = self.get_reply(random_recipe_request_url)
+        random_recipe_reply = self.get_request(random_recipe_request_url)
 
         assert random_recipe_reply.status_code == 200
         json_random_recipe_reply = random_recipe_reply.json()
